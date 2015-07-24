@@ -1,5 +1,5 @@
 ### Overview of task
-Create a plugin that displays a list of movies, with the following taks:  
+Create a plugin that displays a list of movies, with the following tasks:  
 
 - Create a JSON API from  a custom post type. 
 - Displays the movies as a frontpage (home page of the site) using the JSON API created in the previous task.
