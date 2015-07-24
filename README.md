@@ -12,7 +12,8 @@ Create a plugin that displays a list of movies parsed from a JSON api of a custo
 - Logic for no movies, etc
 - Simple documentation for using the plugin
 - Structure should look like:
-```json
+
+```
 {
   data: [
      {
@@ -34,7 +35,7 @@ Create a plugin that displays a list of movies parsed from a JSON api of a custo
      …
   ]
 }
-`
+```
 
 
 ### Bonus for
