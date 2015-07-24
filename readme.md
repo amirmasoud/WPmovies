@@ -1,5 +1,8 @@
 ### Overview of task
-Create a plugin that displays a list of movies parsed from a JSON api of a custom post type. 
+Create a plugin that displays a list of movies, with the following taks:  
+
+- Create a JSON API from  a custom post type. 
+- Displays the movies as a frontpage (home page of the site) using the JSON API created in the previous task.
 
 ### Data / Specification
 - Custom Post Type: Movie
@@ -12,29 +15,30 @@ Create a plugin that displays a list of movies parsed from a JSON api of a custo
 - Logic for no movies, etc
 - Simple documentation for using the plugin
 - Structure should look like:
+
 ```json
 {
   data: [
      {
         id: 1
-        title: “UP"
-        poster_url: ‘http://localhost.dev/images/up.jpg"’,
+        title: 'UP'
+        poster_url: ‘http://localhost.dev/images/up.jpg’,
         rating: 5,
         year: 2010
-        short_description: ‘’ Phasellus ultrices nulla quis nibh. Quisque a lectus",
+        short_description: ‘Phasellus ultrices nulla quis nibh. Quisque a lectus',
      },
      {
         id: 2
-        title: “Avatar"
-        poster_url: ‘http://localhost.dev/images/avatar.jpg"’,
+        title: 'Avatar'
+        poster_url: ‘http://localhost.dev/images/avatar.jpg’,
         rating: 3,
         year: 2012
-        short_description: ‘’ Phasellus ultrices nulla quis nibh. Quisque a lectus",
+        short_description: ‘Phasellus ultrices nulla quis nibh. Quisque a lectus',
      }
      …
   ]
 }
-`
+```
 
 
 ### Bonus for
