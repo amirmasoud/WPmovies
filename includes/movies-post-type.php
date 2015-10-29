@@ -37,7 +37,7 @@ function movie_cpt_init() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 81,
-		'supports'           => array( 'title', 'thumbnail', 'revisions' )
+		'supports'           => array( 'title', 'thumbnail', 'editor', 'revisions' )
 	);
 	register_post_type( 'movies', $args );
 }

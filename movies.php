@@ -18,4 +18,5 @@ require 'settings/install.php';
 require 'settings/deactivation.php';
 
 // includes
+require 'includes/movies-post-type.php';
 require 'includes/movies-meta-box.php';
