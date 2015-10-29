@@ -12,11 +12,14 @@ License: GPLv2 or later
 /**
  * NOTICE: in some case order matters
  */
+// Constrants
+define('MOVIE_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
+define('MOVIE_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 
 // settings
-require 'settings/install.php';
-require 'settings/deactivation.php';
+require_once(MOVIE_PLUGIN_PATH . 'settings/install.php');
+require_once(MOVIE_PLUGIN_PATH . 'settings/deactivation.php');
 
 // includes
-require 'includes/movies-post-type.php';
-require 'includes/movies-meta-box.php';
+require_once(MOVIE_PLUGIN_PATH . 'includes/movies-post-type.php');
+require_once(MOVIE_PLUGIN_PATH . 'includes/movies-meta-box.php');
