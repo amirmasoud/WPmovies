@@ -9,6 +9,13 @@ Author URI: http://chakosh.ir/
 Textdomain: movie
 License: GPLv2 or later
 */
+/**
+ * NOTICE: in some case order matters
+ */
 
+// settings
 require 'settings/install.php';
 require 'settings/deactivation.php';
+
+// includes
+require 'includes/movies-meta-box.php';
