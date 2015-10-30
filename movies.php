@@ -15,6 +15,7 @@ License: GPLv2 or later
 // Constrants
 define('MOVIE_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
 define('MOVIE_PLUGIN_URL', plugin_dir_url( __FILE__ ));
+define('MOVIE_CAHCE_PREFIX', 'movie_cache_');
 
 // settings
 require_once(MOVIE_PLUGIN_PATH . 'settings/install.php');
