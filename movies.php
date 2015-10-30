@@ -25,3 +25,4 @@ require_once(MOVIE_PLUGIN_PATH . 'settings/deactivation.php');
 require_once(MOVIE_PLUGIN_PATH . 'includes/movies-post-type.php');
 require_once(MOVIE_PLUGIN_PATH . 'includes/movies-meta-box.php');
 require_once(MOVIE_PLUGIN_PATH . 'includes/movies-json.php');
+require_once(MOVIE_PLUGIN_PATH . 'includes/movies-cache-flush.php');
