@@ -61,11 +61,11 @@ function movie_json() {
 			// push to return array based on JSON API
 			$json_return['data'][] = array(
 				'id' 				=> '0',
-				'title' 			=> 'No movie yet...',
+				'title' 			=> __('No movie yet...', 'movies'),
 				'poster_url' 		=> '',
 				'year' 				=> '',
 				'rating'			=> '',
-				'short_description' => "<h3>Create your first movie, <a href=" . admin_url() .  "'/post-new.php?post_type=movies'>Create new movie</a></h3>"
+				'short_description' => "<h3>" . __('Create your first movie', 'movies') . ", <a href=" . admin_url() .  "'/post-new.php?post_type=movies'>" . __('Create new movie', 'movies') . "</a></h3>"
 				);
 		endif;
 		wp_reset_postdata();
