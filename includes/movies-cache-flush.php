@@ -18,4 +18,10 @@ function movie_cache_flush() {
 	
 	wp_reset_postdata();
 }
+add_action('trash_movies', 'movie_cache_flush', 10);
+add_action('delete_movies', 'movie_cache_flush', 10);
+add_action('new_movies', 'movie_cache_flush', 10);
 add_action('publish_movies', 'movie_cache_flush', 10);
+add_action('pending_movies', 'movie_cache_flush', 10);
+add_action('draft_movies', 'movie_cache_flush', 10);
+add_action('private_movies', 'movie_cache_flush', 10);
