@@ -42,7 +42,7 @@ function movie_json() {
 			while ( $loop->have_posts() ) : $loop->the_post();
 				// get thumbnail
 				$thumbnail_id = get_post_thumbnail_id();
-				$thumbnail_src = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail' );
+				$thumbnail_src = wp_get_attachment_image_src( $thumbnail_id );
 
 				// push to return array based on JSON API
 				$json_return['data'][] = array(
@@ -54,6 +54,19 @@ function movie_json() {
 					'short_description' => get_the_content()
 					);
 			endwhile;
+		endif;
+
+		// if no movie added yet, handling empty result
+		if ( ! array_key_exists('data', $json_return) ) :
+			// push to return array based on JSON API
+			$json_return['data'][] = array(
+				'id' 				=> '0',
+				'title' 			=> 'No movie yet...',
+				'poster_url' 		=> '',
+				'year' 				=> '',
+				'rating'			=> '',
+				'short_description' => "<h3>Create your first movie, <a href=" . admin_url() .  "'/post-new.php?post_type=movies'>Create new movie</a></h3>"
+				);
 		endif;
 		wp_reset_postdata();
 
