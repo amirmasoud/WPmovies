@@ -20,8 +20,11 @@ define('MOVIE_CAHCE_PREFIX', 'movie_cache_');
 // settings
 require_once(MOVIE_PLUGIN_PATH . 'settings/install.php');
 require_once(MOVIE_PLUGIN_PATH . 'settings/deactivation.php');
+require_once(MOVIE_PLUGIN_PATH . 'settings/localization.php');
 
 // includes
 require_once(MOVIE_PLUGIN_PATH . 'includes/movies-post-type.php');
 require_once(MOVIE_PLUGIN_PATH . 'includes/movies-meta-box.php');
 require_once(MOVIE_PLUGIN_PATH . 'includes/movies-json.php');
+require_once(MOVIE_PLUGIN_PATH . 'includes/movies-cache-flush.php');
+require_once(MOVIE_PLUGIN_PATH . 'includes/movies-shortcode.php');
