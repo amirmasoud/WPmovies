@@ -1,4 +1,4 @@
-var app = angular.module('moviesApp', []);
+var app = angular.module('moviesApp', ['ngAnimate']);
 app.controller('moviesController', function($scope, $http, $sce) {
 	// load more button visibility
 	$scope.loadMoreVisi = true;
@@ -23,7 +23,7 @@ app.controller('moviesController', function($scope, $http, $sce) {
 		// load next page
 		var nextPage = document.getElementById('load-more').getAttribute('data-next');		
 		$http.get(nextPage)
-		.error(function (response) {
+		.success(function (response) {
 				var links = response.links;
 				var data = response.data;
 				angular.forEach(data, function(value, key) {
