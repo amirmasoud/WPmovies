@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/amirmasoud/WPmovies.svg?branch=master)](https://travis-ci.org/amirmasoud/WPmovies)
+
 ### Movie post type - WordPress Plugin
 Movie post type with rating and year.
 
