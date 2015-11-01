@@ -1,0 +1,18 @@
+/**
+ * ngAnimate for movies
+ * come faded from right with linear animation
+ */
+.ng-enter {
+   -webkit-transition: 1s linear all;
+   -moz-transition: 1s linear all;
+   -ms-transition: 1s linear all;
+   -o-transition: 1s linear all;
+   transition: 1s linear all;
+   opacity: 0;
+   right: -150px;
+   position: relative;
+}
+.ng-enter-active {
+   opacity: 1;
+   right: 0;
+}

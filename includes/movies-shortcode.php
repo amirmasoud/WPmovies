@@ -5,9 +5,11 @@
  */
 function movies_shortcode(){
 	wp_enqueue_script('movies-angularjs', 'http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js');
-	wp_enqueue_script('movies-app', MOVIE_PLUGIN_URL . 'js/moviesApp.js', array('movies-angularjs'));
+	wp_enqueue_script('movies-angularjs-animate', 'http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js');
+	wp_enqueue_script('movies-app', MOVIE_PLUGIN_URL . 'js/moviesApp.js', array('movies-angularjs', 'movies-angularjs-animate'));
+	wp_enqueue_style('movies-angular-animate', MOVIE_PLUGIN_URL . 'css/ng-animate.css');
 
-	echo '<div id="movies" class="movies" ng-app="moviesApp" ng-controller="moviesController" data-ajax="' . get_site_url() . '/?api=1&paged=1' . '"> 
+	echo '<div id="movies" class="movies" ng-app="moviesApp" ng-controller="moviesController" data-ajax="' . get_site_url() . '/?api=1&paged=1' . '"  ng-animate="\'animate\'"> 
 			<div class="movie" ng-repeat="movie in data">
 				<div class="movie-poster">
 					<img ng-src="{{ movie.poster_url }}" />
