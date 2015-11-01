@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-11-01 07:13+0330\n"
+"PO-Revision-Date: 2015-11-01 07:14+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/movies-json.php:66
+msgid "No movie yet..."
+msgstr ""
+
+#: includes/movies-json.php:70
+msgid "Create your first movie"
+msgstr ""
+
+#: includes/movies-json.php:70
+msgid "Create new movie"
+msgstr ""
+
+#: includes/movies-meta-box.php:7 includes/movies-shortcode.php:21
+msgid "Rating"
+msgstr ""
+
+#: includes/movies-meta-box.php:8
+msgid "Publish year"
+msgstr ""
+
+#: includes/movies-meta-box.php:29
+msgid "Rate of the movie from 0 to 10"
+msgstr ""
+
+#: includes/movies-meta-box.php:53
+msgid "Published year"
+msgstr ""
+
+#: includes/movies-post-type.php:9 includes/movies-post-type.php:11
+msgid "Movies"
+msgstr ""
+
+#: includes/movies-post-type.php:10 includes/movies-post-type.php:12
+msgid "Movie"
+msgstr ""
+
+#: includes/movies-post-type.php:13
+msgid "Add New"
+msgstr ""
+
+#: includes/movies-post-type.php:14
+msgid "Add New Movie"
+msgstr ""
+
+#: includes/movies-post-type.php:15
+msgid "New Movie"
+msgstr ""
+
+#: includes/movies-post-type.php:16
+msgid "Edit Movie"
+msgstr ""
+
+#: includes/movies-post-type.php:17
+msgid "View Movie"
+msgstr ""
+
+#: includes/movies-post-type.php:18
+msgid "All Movies"
+msgstr ""
+
+#: includes/movies-post-type.php:19
+msgid "Search Movies"
+msgstr ""
+
+#: includes/movies-post-type.php:20
+msgid "Parent Movies:"
+msgstr ""
+
+#: includes/movies-post-type.php:21
+msgid "No movies found."
+msgstr ""
+
+#: includes/movies-post-type.php:22
+msgid "No movies found in Trash."
+msgstr ""
+
+#: includes/movies-post-type.php:28
+msgid "Description."
+msgstr ""
+
+#: includes/movies-shortcode.php:19
+msgid "Published in"
+msgstr ""
+
+#: includes/movies-shortcode.php:20
+msgid " | "
+msgstr ""
+
+#: includes/movies-shortcode.php:21
+msgid "of 10"
+msgstr ""
+
+#: includes/movies-shortcode.php:25
+msgid "Load More..."
+msgstr ""
