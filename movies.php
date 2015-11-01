@@ -18,7 +18,7 @@ define('MOVIE_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 define('MOVIE_CAHCE_PREFIX', 'movie_cache_');
 
 // settings
-require_once(MOVIE_PLUGIN_PATH . 'settings/install.php');
+require_once(MOVIE_PLUGIN_PATH . 'settings/activation.php');
 require_once(MOVIE_PLUGIN_PATH . 'settings/deactivation.php');
 require_once(MOVIE_PLUGIN_PATH . 'settings/localization.php');
 

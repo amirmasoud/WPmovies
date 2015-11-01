@@ -17,6 +17,11 @@ app.controller('moviesController', function($scope, $http, $sce) {
 			angular.forEach($scope.data, function(value, key) {
 				value.short_description = $sce.trustAsHtml(value.short_description);
 			});
+
+			// if it's the only page of data we have,
+			// so hide the load more button
+			if ( response.links.next.href == response.links.prev.href )
+				$scope.loadMoreVisi = false;
 		});
 
 	$scope.loadMore = function(){

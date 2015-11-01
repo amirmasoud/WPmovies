@@ -32,7 +32,7 @@ function movie_cpt_init() {
 		'show_in_menu'       => true,
 		'menu_icon'	         => 'dashicons-format-video',
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'movie' ),
+		'rewrite'            => array( 'slug' => 'movies' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
@@ -40,5 +40,6 @@ function movie_cpt_init() {
 		'supports'           => array( 'title', 'thumbnail', 'editor', 'revisions' )
 	);
 	register_post_type( 'movies', $args );
+
 }
 add_action( 'init', 'movie_cpt_init' );
