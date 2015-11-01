@@ -5,7 +5,9 @@
  */
 function movie_json() {
 	// are we one the api page?
-	if ( ! isset($_GET['api']) )
+	// or is php unit runnig
+	if ( ! isset($_GET['api']) &&
+		 ! defined('MOVIE_PHPUNIT_RUNNING') )
     	return;
 
     // get current page
@@ -73,6 +75,14 @@ function movie_json() {
 		// set persistance cache for one day
 		// we will also flush the cache on new post
 		set_transient( $movie_cache, $json_return, DAY_IN_SECONDS);
+
+		// wp_send_json return json and execte die()
+		// not good for php unit, so we check if
+		// it's phpunit we encode and return
+		// it's inside of 'if' so it's check it when generating
+		// cache not every time it wants to return actual data
+		if (defined('MOVIE_PHPUNIT_RUNNING'))
+			return json_encode(get_transient( $movie_cache ));
 	endif;
 
 	// create json and die for cache that we created or had before
